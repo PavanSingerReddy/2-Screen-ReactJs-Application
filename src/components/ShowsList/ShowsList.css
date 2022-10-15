@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    padding:0px;
+    margin:0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color:rgb(241, 241, 241);
+}
+
+
+header{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-bottom:2px solid black;
+    background-color:rgb(240, 240, 240);
+}
+
+header span{
+    font-size: 2rem;
+}
+.main-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    margin-top:2em;
+    /* overflow-y:auto; */
+}
+.show-container{
+    margin-top:3em;
+    width:65em;
+    background-color:white !important;
+    display:flex;
+    border-radius:10px;
+    
+}
+
+.show-container:hover{
+    box-shadow:-1px 14px 41px -16px rgba(126, 126, 126, 0.75);
+}
+
+.show-container .show-img img{
+    width:9em;
+    position: relative;
+    top:-2em;
+    left:1em;
+    box-shadow: -1px 14px 25px -5px rgba(0,0,0,0.75);
+}
+
+
+.show-container .show-details{
+    margin-left:2em;
+    /* background-color:blue; */
+    width:100%;
+}
+
+.show-container .show-details div .s-name{
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+.show-container .show-details .s-more-details div span{
+    margin-right:1em;
+}
+
+.s-more-details .s-runtime {
+
+    font-weight: bold;
+
+    /* background-color:red; */
+
+    /* font-size:1rem; */
+
+}
+
+.s-more-details{
+    width:100%;
+    height:100%;
+    padding-top:2em;
+    /* background-color: blue; */
+}
+
+.s-rating{
+    width:100%;
+    /* background-color: red; */
+    display:flex;
+    flex-direction:row-reverse;
+    justify-content: center;
+    align-items:center;;
+}
+
+.s-rating span{
+    font-size:3rem;
+    font-weight: bold;
+}
+
+.s-watch-option{
+    display:flex;
+    width:25em;
+    justify-content: center;
+    align-items: center;
+}
+
+.s-watch-option button{
+    border:2px solid black;
+    padding:0.9em;
+    background:none;
+}
+
+.s-watch-option button:hover{
+    border:2px solid white;
+    color:white;
+    background-color: black;
+    cursor:pointer;
+}
+
+
+
+@media all and (max-width:500px){
+    .show-container{
+        width:100%;
+        display:flex;
+        flex-direction:column;
+    }
+
+    .show-container .show-img{
+        display:flex;
+        justify-content:center;
+    }
+
+    .show-container .show-img img{
+        top:-1em;
+        left:0em;
+    }
+
+    .s-watch-option{
+        width:100%;
+        display:flex;
+
+    }
+
+
+
+}
+

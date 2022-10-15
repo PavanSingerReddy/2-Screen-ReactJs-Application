@@ -1,0 +1,78 @@
+.container{
+    background-color:rgb(228, 228, 228);
+    border-radius: 20px 20px 0px 0px;
+    box-shadow: -1px -10px 42px -15px rgba(94,94,94,1);
+    
+}
+
+.m-show-image{
+    display:flex;
+    justify-content: center;
+}
+
+
+.m-show-image img{
+    width:15em;
+    position:relative;
+    top:3em;
+    box-shadow: -1px 14px 25px -5px rgba(0,0,0,0.75);
+}
+
+.m-s-title{
+    display:flex;
+    justify-content: center;
+    margin-top:6em;
+    
+}
+
+.m-s-title .title{
+    font-size:3em;
+    font-weight:bold;
+
+}
+
+
+.container .m-summary{
+    padding:20px;
+}
+
+.container .m-book-show{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    padding-bottom:2em;
+    
+}
+
+.m-book-show .m-book-btn{
+    outline:none;
+    background:none;
+    border:none;
+    border:1px solid black;
+    padding:1em;
+}
+
+.m-book-show .m-book-btn:hover{
+    background-color:black;
+    color:white;
+    cursor:pointer;
+}
+
+.container .m-s-more-details{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+}
+
+.m-s-more-details div span{
+    margin-right:1em;
+}
+
+
+@media all and (max-width:500px){
+    .m-s-more-details div{
+        padding:1em;
+    }
+}
+
